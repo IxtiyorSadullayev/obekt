@@ -9,6 +9,8 @@ class Oquvchi:
         self.fam=fam
         self.age=age
         self.manzil=manzil
+    def __str__(self) -> str:
+        return self.name
 
 rasul=Oquvchi("Rasul", "Baxtiyorov", 16, "O'zbekiston")
 # rasul.name="Rasul"
@@ -26,3 +28,4 @@ print(rasul.name,bexruz.name)
 yunus = Oquvchi("Yunus", "Jumanazarov", 17, "Istiqlol")
 mohinur = Oquvchi("Mohinur", "Aitboyeva", 15, "Mustaqillik MFY")
 print(yunus.fam, mohinur.fam)
+print(yunus)
